@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Reusable Gallery Plugin</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <h1>jQuery Resusable gallery Plug-ins</h1>
+        <div id="thumbnails" class="thumbnailsWrapper"></div>
+        
+        <script type="text/javascript" src="js/jquery-latest.js"></script>
+        <script type="text/javascript" src="js/applestack-gallery-plugin.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                natureGallery = new jqGallery({
+                    objName : "natureGallery",
+                    thumbsElements : "#thumbnails",
+                    thumbnailsPath : "img/thumbs",
+                    fullimagesPath : "img/full",
+                    imagesArray : [
+                        "nature0.jpg",
+                        "nature1.jpg",
+                        "nature2.jpg",
+                        "nature3.jpg",
+                        "nature4.jpg",
+                    ]
+                });
+            });
+        </script>
+    </body>
+</html>
